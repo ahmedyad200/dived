@@ -3832,7 +3832,7 @@ end,nil)
 end
 end
 if text == 'الملفات' and SudoBot(msg) then
-t = '✶ ملفات ال𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐎𝐗⁦ ↓\n◎ ══════ ❈ ══════ ◎ \n'
+t = '✶ الملفات الموجوده في البوت ↓\n◎ ══════ ❈ ══════ ◎ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -3844,7 +3844,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if SudoBot(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/mostafaaziza/tefa/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/ahmedyad200/dived/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -3882,13 +3882,13 @@ t = "✶ الملف » "..file.."\n✶ تم تعطيل ملف \n"
 else
 t = "✶ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/mostafaaziza/tefa/master/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/ahmedyad200/dived/master/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKA.lua')  
 else
-send(msg.chat_id_, msg.id_,"✶ عذرا الملف لايدعم𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐎𝐗⁦ \n") 
+send(msg.chat_id_, msg.id_,"✶ عذرا الملف لا يدعم سورس توكس \n") 
 end
 return false
 end
@@ -3902,7 +3902,7 @@ t = "✶ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = "✶ الملف » "..file.."\n✶ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/mostafaaziza/tefa/master/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/ahmedyad200/dived/master/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -3910,7 +3910,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKA.lua')  
 else
-send(msg.chat_id_, msg.id_,"✶ عذرا الملف لايدعم𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐎𝐗⁦ \n") 
+send(msg.chat_id_, msg.id_,"✶ عذرا الملف لا يدعم سورس توكس\n") 
 end
 return false
 end
