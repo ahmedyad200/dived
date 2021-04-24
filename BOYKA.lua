@@ -3849,7 +3849,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n✶ اهلا بك في متجر ملفات الجارح\n✶ ملفات السورس ↓\n◎ ══════ ❈ ══════ ◎\n\n"
+local TextS = "\n✶ اهلا بك في متجر ملفات توكس\n✶ ملفات السورس ↓\n◎ ══════ ❈ ══════ ◎\n\n"
 local TextE = "\n◎ ══════ ❈ ══════ ◎\n✶ علامة تعني { ✓ } ملف مفعل\n✶ علامة تعني { ✘ } ملف معطل\n✶ قناة𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐎𝐗⁦ ↓\n".."✶ [اضغط هنا لدخول](t.me/A_V_I_R_A_1) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -9682,8 +9682,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'الجارح').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'الجارح')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'توكس').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'توكس')
 local BOYKA_Msg = {
 'يوه '..Namebot..' زهق منك😒',
 'نعم ياعيون '..Namebot..' 😻💓',
@@ -10554,7 +10554,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'الجارح').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'✪ تم مغادرة المجموعه') 
@@ -10574,20 +10574,20 @@ local TWEET_Msg =
 send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']') 
 return false
 end
-if text == 'صاحب التلجرام' or text == 'الجارح' or text == 'عبده' then
+if text == 'صاحب التلجرام' or text == 'ديفيد' or text == 'صاحب التليجرام' then
 local Text = [[
 ✪┃صاحب التلجرام يمكنك..💓
 ✪┃التواصل معه عن طريق معرفه
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐀𝑳𝐉𝐀𝐑𝐈𝐇',url="t.me/A_V_I_R_A_1"}},
+{{text = 'صاحب التليجرام',url="t.me/A_V_I_R_A_1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'الجارح')
+Namebot = (database:get(bot_id..'Name:Bot') or 'توكس')
 send(msg.chat_id_, msg.id_,'اسمي الكيوت ['..Namebot..']..💓😸')
 end
 if text == 'الاحصائيات' then
@@ -12953,7 +12953,7 @@ if (text and text == "تفعيل اوامر التسليه") then
 send(msg.chat_id_, msg.id_, ' ✶ تم تفعيل اوامر التسليه')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'الجارح')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ديفيد')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  "رد"..Name_Bot..'اي رأيك ف دا يا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
