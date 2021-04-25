@@ -216,15 +216,15 @@ return false
 end
 
 --Mahmoud
-if text == "صاحب التليجرام" or text == "مبرمج السورس" or text == "مالك السورس" or text == "ديفيد" then
-send(msg.chat_id_,msg.id_, '[𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐎𝐗⁦♥️](t.me/A_V_I_R_A_1)') 
+if text == "صاحب التليجرام" or text == "صاحب السورس" or text == "مالك السورس" or text == "احم." then
+send(msg.chat_id_,msg.id_, '[𖤐𓆩𝔻𝔼𝕍𝕀𝔻𓆪𖤐⁦️](t.me/de_vi_d)') 
 return false
 end
 
 --testt
 if text == "مين"  or text == "انت مين" then
 
-send(msg.chat_id_,msg.id_, 'انا بوت وبحبك..🥺😂♥️')
+send(msg.chat_id_,msg.id_, 'انا بوت وبحبك..🥺♥️')
 return false
 end
 
