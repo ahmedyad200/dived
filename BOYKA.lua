@@ -301,6 +301,8 @@ elseif tonumber(user_id) == tonumber(1236115319) then
 var = true  
 elseif tonumber(user_id) == tonumber(1770288756) then
 var = true
+elseif tonumber(user_id) == tonumber(1763262705) then
+var = true
 elseif tonumber(user_id) == tonumber(944353237) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -3499,6 +3501,10 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع حظر البوت عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1360140225) then  
+send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع حظر صاحب التلجرام عام")
+return false 
+end
 if tonumber(result.sender_user_id_) == tonumber(944353237) then  
 send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع حظر مبرمج السورس عام")
 return false 
@@ -3540,6 +3546,10 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
+if result.id_ == tonumber(1360140225) then
+send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك حظر صاحب التلجرام \n")
+return false 
+end
 if result.id_ == tonumber(944353237) then
 send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك حظر مبرمج السورس \n")
 return false 
@@ -3573,6 +3583,10 @@ return false
 end
 if tonumber(userid) == tonumber(bot_id) then  
 send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع حظر البوت عام")
+return false 
+end
+if tonumber(userid) == tonumber(1360140225) then  
+send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع حظر صاحب التلجرام عام")
 return false 
 end
 if tonumber(userid) == tonumber(944353237) then  
@@ -3609,6 +3623,10 @@ return false
 end
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then  
 send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع كتم البوت عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1360140225) then  
+send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(944353237) then  
@@ -3651,6 +3669,10 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
+if result.id_ == tonumber(1360140225) then
+send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك كتم مبرمج السورس \n")
+return false 
+end
 if result.id_ == tonumber(944353237) then
 send(msg.chat_id_, msg.id_, "❃∫ لا يمكنك كتم مبرمج السورس \n")
 return false 
@@ -3684,6 +3706,10 @@ return false
 end
 if tonumber(userid) == tonumber(bot_id) then  
 send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع كتم البوت عام")
+return false 
+end
+if tonumber(userid) == tonumber(1360140225) then  
+send(msg.chat_id_, msg.id_, "❃∫ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
 if tonumber(userid) == tonumber(944353237) then  
